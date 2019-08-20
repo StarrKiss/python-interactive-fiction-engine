@@ -1,1 +1,1 @@
-This is a python engine for interactive fiction, fully object oriented.
+This is a python engine for interactive fiction, Written with every command and section as an object.
