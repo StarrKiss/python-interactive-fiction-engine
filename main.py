@@ -7,11 +7,16 @@ import commands
 from commands import Command
 
 
-text2 = Section('assets/text2', [])
+
+
+text2 = Section('assets/text2', [Command(text5, "Investigate"), Command(text1, "Go Back")])
 
 text3 = Section('assets/text3', [])
 
 text4 = Section('assets/text4', [])
+
+text5 = Section('assets/text5', [])
+
 
 
 
