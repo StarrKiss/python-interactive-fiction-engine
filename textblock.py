@@ -2,7 +2,7 @@ class Section:
 	text = ""
 	commands = []
 	def __init__(self, text, commandArray):
-		self.text = text
+		self.text = open(text, 'r').read()
 		self.commands = commandArray
 	def call(self):
 		print(self.text)

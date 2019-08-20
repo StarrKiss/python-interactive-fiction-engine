@@ -4,7 +4,7 @@ from textblock import Section
 
 
 class Command:
-	obj = Section("Null", [])
+	obj = Section('assets/nulltest', [])
 
 	commandText = ""
 
