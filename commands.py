@@ -2,6 +2,8 @@ import textblock
 
 from textblock import Section
 
+from store import Store
+
 
 class Command:
 	obj = Section('assets/nulltest', [])
@@ -9,7 +11,8 @@ class Command:
 	commandText = ""
 
 	def __init__(self, nextSection, titleText):
-		self.obj = nextSection
+		store = Store()
+		self.obj = store.getItem(nextSection)
 		self.commandText = titleText
 
 	def callNextSec(self):

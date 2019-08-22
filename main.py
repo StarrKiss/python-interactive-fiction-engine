@@ -6,42 +6,15 @@ import commands
 
 from commands import Command
 
+import store
+
+from store import Store
 
 
-text1 = Section('assets/nulltest', [])
-
-text5 = Section('assets/text5', [])
-
-text2 = Section('assets/text2', [Command(text5, "Investigate"), Command(text1, "Go Back")])
-
-text3 = Section('assets/text3', [])
-
-text4 = Section('assets/text4', [])
+store = Store()
 
 
-
-
-
-
-command1 = Command(text2, "West")
-
-command2 = Command(text3, "East")
-
-command3 = Command(text4, "North")
-
-
-
-
-
-text1 = Section('assets/text1', [command1, command3, command2])
-
-
-
-
-
-
-text1.call()
-
+store.getItem('text1').call()
 #text1.call()
 
 
