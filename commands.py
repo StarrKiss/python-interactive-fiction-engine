@@ -2,7 +2,7 @@ import textblock
 
 from textblock import Section
 
-#from store import Store
+from store import Store
 
 
 class Command:
@@ -11,8 +11,8 @@ class Command:
 	commandText = ""
 
 	def __init__(self, nextSection, titleText):
-		#store = Store()
-		#self.obj = store.getItem(nextSection)
+		store = Store()
+		self.obj = store.getItem(nextSection)
 		self.commandText = titleText
 
 	def callNextSec(self):

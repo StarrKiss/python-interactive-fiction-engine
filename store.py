@@ -18,4 +18,4 @@ class Store:
 		self.text2 = Section('assets/text2', [Command('text5', "Investigate"), Command('text1', "Go Back")])
 
 	def getItem(self, item):
-		return globals()[item]
+		return self.__dict__.get(item)
