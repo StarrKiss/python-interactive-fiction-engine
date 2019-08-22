@@ -9,6 +9,8 @@ from textblock import Store
 
 store = Store()
 
+#fuck this
+
 store.getItem("text1").call()
 #text1.call()
 
