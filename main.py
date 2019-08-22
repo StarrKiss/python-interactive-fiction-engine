@@ -14,7 +14,7 @@ from store import Store
 store = Store()
 
 
-store.getItem('text1').call()
+store.getItem('text1')
 #text1.call()
 
 
